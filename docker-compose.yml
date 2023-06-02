@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
         web:
-                build: ./app
+                # build: ./app
 
-                # image: ivangorm/hello_django:latest
+                image: ivangorm/hello_django:latest
                 command: gunicorn hello_django.wsgi:application --bind 0.0.0.0:8000
                 volumes:
                         - static_volume:/home/app/web/staticfiles
