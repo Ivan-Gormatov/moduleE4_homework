@@ -18,8 +18,11 @@ services:
                 image: postgres:13.0-alpine
                 volumes:
                         - postgres_data:/var/lib/postgresql/data/
-                env_file:
-                        - ./.env.db
+                environment:
+                        POSTGRES_USER: "django_user"
+                        POSTGRES_PASSWORD: "django_password"
+                        POSTGRES_DB: "django_db"
+                        
         nginx:
                 # build: ./nginx
                 image: nginx:latest
