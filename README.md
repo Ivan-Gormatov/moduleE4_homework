@@ -1,6 +1,6 @@
 # moduleE4_homework
 
-Если Docker не установлен то установлеваем его командой: `curl -fsSL https://get.docker.com/ | sh`  
+Если Docker не установлен, то установливаем его командой: `curl -fsSL https://get.docker.com/ | sh`  
 и Compose : `sudo apt  install docker-compose`
 
 
